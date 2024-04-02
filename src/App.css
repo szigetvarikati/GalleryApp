@@ -18,7 +18,7 @@
   color: white;
 }
 
-.App-footer {
+/* .App-footer {
   background-color: #282c34;
   min-height: 5vh;
   display: flex;
@@ -27,6 +27,17 @@
   justify-content: flex-end;
   font-size: calc(8px + 2vmin);
   color: white;
+} */
+
+.App-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  min-height: 2%;
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 10px;
+  font-size: smaller;
 }
 
 .App-link {
@@ -98,5 +109,26 @@
 
   .table thead {
     display: none;
+  }
+}
+
+/* styles.css vagy valamilyen más stílusfájlban */
+@media screen and (max-width: 768px) {
+  .App-footer {
+    height: 30px; /* Kisebb magasság mobil nézetben */
+    font-size: medium;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .App-footer {
+    height: 50px; /* Nagyobb magasság asztali nézetben */
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
   }
 }
