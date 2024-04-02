@@ -1,21 +1,17 @@
 import React, { useState } from 'react';
-import Button from './Button';
+import MyButton from './MyButton';
 
 function SearchBar() {
   const [searchQuery, setSearchQuery] = useState('');
-  // const [prefix, setPrefix] = useState('');
-  // const [type, setType] = useState('');
-  // const [format, setFormat] = useState('');
-  // const [date, setDate] = useState('');
 
   const handleSearch = () => {
-    console.log('Search:', searchQuery /*prefix, type, format, date*/);
+    console.log('Search:', searchQuery);
   };
 
   return (
-    <div className="container">
-      <div className="row mt-3 justify-content-center">
-        <div className="col-lg-4 col-md-4 col-sm-4">
+    <div className="container mt-3 app.header">
+      <div className="row justify-content-center">
+        <div className="col-lg-4 col-md-4 col-sm-6">
           <div className="input-group mb-3">
             <input
               type="text"
@@ -34,9 +30,13 @@ function SearchBar() {
             />
           </div>
         </div>
-        <div className="col-lg-4 col-md-4 col-sm-4">
+        <div className="col-lg-4 col-md-4 col-sm-4 text-center">
           <div className="input-group mb-3">
-            <Button label="Keresés" onClick={handleSearch} />
+            <MyButton
+              variant="outline-secondary"
+              label="Keresés"
+              onClick={handleSearch}
+            />
           </div>
         </div>
       </div>
