@@ -7,25 +7,67 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 5vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: flex-start;
+  font-size: calc(8px + 2vmin);
   color: white;
+}
+
+/* .App-footer {
+  background-color: #282c34;
+  min-height: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: calc(8px + 2vmin);
+  color: white;
+} */
+
+.App-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  min-height: 2%;
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 10px;
+  font-size: smaller;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.Table-bordered {
+  border-collapse: collapse;
+  padding: 8px;
+}
+
+.Table-bordered td,
+.Table-bordered th {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+.img-container {
+  max-width: 300px; /* Maximális méret */
+  min-width: 150px; /* Minimális méret */
+  width: 100%; /* Automatikusan kitölti a rendelkezésre álló teret */
+  margin: auto; /* Középre igazítás */
+}
+
+.img-hover {
+  transition: transform 0.3s ease; /* Sima átmenet animáció */
+}
+
+.img-hover:hover {
+  transform: scale(1.25); /* 25% nagyobb méret a hover hatására */
 }
 
 @keyframes App-logo-spin {
@@ -34,5 +76,59 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* tablets*/
+@media (max-width: 768px) {
+  .table-responsive {
+    overflow-x: auto;
+  }
+}
+
+/* mobils*/
+@media (max-width: 576px) {
+  .table-responsive {
+    overflow-x: auto;
+  }
+
+  .table tbody tr {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .table tbody td {
+    display: block;
+  }
+
+  .table thead {
+    display: none;
+  }
+}
+
+/* styles.css vagy valamilyen más stílusfájlban */
+@media screen and (max-width: 768px) {
+  .App-footer {
+    height: 30px; /* Kisebb magasság mobil nézetben */
+    font-size: medium;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .App-footer {
+    height: 50px; /* Nagyobb magasság asztali nézetben */
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
   }
 }
