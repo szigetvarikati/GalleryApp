@@ -1,15 +1,12 @@
 import './App.css';
+import Header from './components/Header';
 import PhotoTable from './components/PhotoTable';
 import SearchBar from './components/SearchBar';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <div>
-          <p>NAVA - Házi feladat</p>
-        </div>
-      </header>
+      <Header />
       <main>
         <SearchBar />
         <PhotoTable />
