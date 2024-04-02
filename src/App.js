@@ -1,15 +1,13 @@
 import './App.css';
 import Footer from './components/Footer';
-import Header from './components/Header';
+import MyNavbar from './components/MyNavBar';
 import PhotoTable from './components/PhotoTable';
-import SearchBar from './components/SearchBar';
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <MyNavbar />
       <main>
-        <SearchBar />
         <PhotoTable />
       </main>
       <Footer />
