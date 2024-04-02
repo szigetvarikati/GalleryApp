@@ -1,4 +1,5 @@
 import './App.css';
+import Footer from './components/Footer';
 import Header from './components/Header';
 import PhotoTable from './components/PhotoTable';
 import SearchBar from './components/SearchBar';
@@ -11,9 +12,7 @@ function App() {
         <SearchBar />
         <PhotoTable />
       </main>
-      <footer className="App-footer">
-        <p>Készítette: Szigetvári Katalin</p>
-      </footer>
+      <Footer />
     </div>
   );
 }
