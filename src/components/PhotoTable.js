@@ -1,23 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import CustomModal from './Modal';
+import CustomModal from './CustomModal';
 
 function PhotoTable() {
   const [photos, setPhotos] = useState([]);
   const [showModal, setShowModal] = useState(false);
-
-  const handleCloseModal = () => {
-    setShowModal(false);
-  };
-
-  const handleSave = () => {
-    // Mentés logika
-    handleCloseModal();
-  };
-
-  const handleDelete = () => {
-    // Törlés logika
-    handleCloseModal();
-  };
+  const [selectedPhoto, setSelectedPhoto] = useState(null);
 
   useEffect(() => {
     // Fetch data from foto.json
@@ -30,6 +17,26 @@ function PhotoTable() {
       })
       .catch((error) => console.error('Error fetching data:', error));
   }, []);
+
+  const handleThumbnailClick = (photo) => {
+    setSelectedPhoto(photo);
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
+
+  const handleSave = (updatedPhotoData) => {
+    // Handle save logic here, you can pass updatedPhotoData to API or update state
+    console.log('Updated photo data:', updatedPhotoData);
+    handleCloseModal();
+  };
+
+  const handleDelete = () => {
+    // Handle delete logic here
+    handleCloseModal();
+  };
 
   return (
     <div className="container">
@@ -49,7 +56,7 @@ function PhotoTable() {
           </thead>
           <tbody>
             {photos.map((photo) => (
-              <tr key={photo.id}>
+              <tr key={photo.id} onClick={() => handleThumbnailClick(photo)}>
                 <td>
                   <div className="img-container">
                     <img
@@ -69,7 +76,7 @@ function PhotoTable() {
                 <td>modify date</td>
                 <td>
                   {photo.format_str}
-                  <p>({photo.bitdepth_i} bit)</p>{' '}
+                  <p>({photo.bitdepth_i} bit)</p>
                 </td>
               </tr>
             ))}
@@ -81,6 +88,7 @@ function PhotoTable() {
         handleCloseModal={handleCloseModal}
         handleSave={handleSave}
         handleDelete={handleDelete}
+        photoData={selectedPhoto} // Pass selectedPhoto as photoData prop
       />
     </div>
   );
