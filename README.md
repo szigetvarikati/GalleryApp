@@ -70,25 +70,20 @@ Follow the guide below to install and run the application.
 
 1. Clone the repository
    ```sh
-   $ git clone https://github.com/szigetvarikat/GalleryApp.git
+   git clone https://github.com/szigetvarikat/GalleryApp.git
    ```
 2. Navigate to the folder
    ```sh
-   $ cd GalleryApp
+   cd GalleryApp
    ```
-3. Open with an editor
-   ```sh
-   $ code .
-   ```
+3. Open the project
 4. Install dependencies
    ```sh
-   # open a new terminal
-   $ npm install
+   npm install
    ```
 5. Run the application
-
    ```sh
-   $ npm start
+   npm start
    ```
 
    The application is accessible at: http://localhost:3000/
@@ -111,7 +106,7 @@ Project Link: https://github.com/szigetvarikati/GalleryApp
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
 [contributors-shield]: https://img.shields.io/github/contributors/szigetvarikati/GalleryApp.svg?style=for-the-badge
-[contributors-url]: https://github.com/szigetvarikati/test-project-MERN/graphs/contributors
+[contributors-url]: https://github.com/szigetvarikati/GalleryApp/graphs/contributors
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/katalin-szigetvári-9829519a
 [product-main]: https://imgur.com/a/jEvI3mU
