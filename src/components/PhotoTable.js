@@ -69,7 +69,7 @@ function PhotoTable() {
     // Handle delete logic here
 
     // API endpoint for deleting photo
-    const deleteEndpoint = '/api/photos/:id'; // Replace :id with the actual photo ID
+    //const deleteEndpoint = '/api/photos/:id'; // Replace :id with the actual photo ID
 
     // First, just log the API call
     console.log('Calling API to delete photo');
