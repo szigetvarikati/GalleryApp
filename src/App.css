@@ -85,6 +85,11 @@
   font-weight: bold;
 }
 
+.form-select {
+  margin-bottom: 10px;
+  padding: 4px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -163,7 +168,6 @@
   .table thead {
     display: none;
   }
-
 }
 
 @media (min-width: 768px) {
@@ -173,10 +177,21 @@
   .bold-meta-text {
     display: inline;
   }
+  .sort-bar {
+    display: none;
+  }
 }
 
 @media (max-width: 769px) {
   .bold-text {
     display: inline;
+  }
+  .btn-outline-secondary {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-inline: 5px;
+    margin-block: 5px;
   }
 }

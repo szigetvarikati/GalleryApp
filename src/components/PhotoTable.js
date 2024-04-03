@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import CustomModal from './CustomModal';
+import SortSelect from './SortSelect';
 
 function PhotoTable() {
   const [photos, setPhotos] = useState([]);
   const [showModal, setShowModal] = useState(false);
   const [selectedPhoto, setSelectedPhoto] = useState(null);
+  const [sortDirections, setSortDirections] = useState({}); // Objektum az oszlopok rendezési irányának tárolásához
 
   useEffect(() => {
     fetch('/foto.json')
@@ -36,17 +38,44 @@ function PhotoTable() {
     handleCloseModal();
   };
 
+  const handleSort = (sortBy) => {
+    const newSortDirections = { ...sortDirections };
+    newSortDirections[sortBy] =
+      newSortDirections[sortBy] === 'asc' ? 'desc' : 'asc';
+    setSortDirections(newSortDirections);
+
+    const sortedPhotos = [...photos].sort((a, b) => {
+      if (newSortDirections[sortBy] === 'asc') {
+        return a[sortBy] < b[sortBy] ? -1 : 1;
+      } else {
+        return a[sortBy] > b[sortBy] ? -1 : 1;
+      }
+    });
+    setPhotos(sortedPhotos);
+  };
+
   return (
     <div className="container">
+      <SortSelect handleSort={handleSort} />
       <div className="table-responsive">
         <table className="table table-bordered">
           <thead className="thead-light">
             <tr>
               <th scope="col">IMG</th>
-              <th scope="col">IDs</th>
-              <th scope="col">RIPORT/SLUG</th>
-              <th scope="col">SIZE</th>
-              <th scope="col">CREATE DATE</th>
+              <th scope="col" onClick={() => handleSort('id')}>
+                IDs {sortDirections['id'] === 'asc' ? '▲' : '▼'}
+              </th>
+              <th scope="col" onClick={() => handleSort('description_str')}>
+                RIPORT/SLUG{' '}
+                {sortDirections['description_str'] === 'asc' ? '▲' : '▼'}
+              </th>
+              <th scope="col" onClick={() => handleSort('ow_i')}>
+                SIZE {sortDirections['ow_i'] === 'asc' ? '▲' : '▼'}
+              </th>
+              <th scope="col" onClick={() => handleSort('createDate_dt')}>
+                CREATE DATE{' '}
+                {sortDirections['createDate_dt'] === 'asc' ? '▲' : '▼'}
+              </th>
               <th scope="col">MODIFY DATE</th>
               <th scope="col">FORMAT</th>
             </tr>
@@ -87,7 +116,7 @@ function PhotoTable() {
                 <td>
                   <span className="bold-text">FORMAT:</span>{' '}
                   <span>
-                    {photo.format_str} <br />  ({photo.bitdepth_i} bit)
+                    {photo.format_str} <br /> ({photo.bitdepth_i} bit)
                   </span>
                 </td>
               </tr>
