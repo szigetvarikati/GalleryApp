@@ -111,7 +111,7 @@ Project Link: https://github.com/szigetvarikati/GalleryApp
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
 [contributors-shield]: https://img.shields.io/github/contributors/szigetvarikati/GalleryApp.svg?style=for-the-badge
-[contributors-url]: https://github.com/szigetvarikati/test-project-MERN/graphs/contributors
+[contributors-url]: https://github.com/szigetvarikati/GalleryApp/graphs/contributors
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/katalin-szigetvári-9829519a
 [product-main]: https://imgur.com/a/jEvI3mU
