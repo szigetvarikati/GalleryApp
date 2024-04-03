@@ -6,7 +6,6 @@ function MetaDataPanel({ photo }) {
           <h5 className="card-title">Metaadatok</h5>
           {photo && (
             <>
-              {console.log(photo, photo.id)}
               <div className="img-container">
                 <img
                   className="card-img-top img-fluid img-thumbnail"
