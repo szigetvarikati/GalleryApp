@@ -8,15 +8,12 @@
   <p align="center">
     This project is a custom homework assigment that I recieved through an application
     <br />
-    <a href="https://github.com/szigetvarikati/GalleryApp"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-   
+
 
   </p>
 </div>
-
-
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -38,11 +35,9 @@
   </ol>
 </details>
 
-
-
 <!-- ABOUT THE PROJECT -->
-## About The Project
 
+## About The Project
 
 This project was a homework which test my frontend developer skills aswell my UX/UI skills.
 The main goal was to create an ergonomic, responsive website based on the mobile-first principle.
@@ -56,18 +51,17 @@ The main goal was to create an ergonomic, responsive website based on the mobile
 
 ### Built With
 
-* [![Javascript][Javascript]][Javascript-url]
-* [![React][React.js]][React-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![Css][Css.com]][Css-url]
+- [![Javascript][Javascript]][Javascript-url]
+- [![React][React.js]][React-url]
+- [![Bootstrap][Bootstrap.com]][Bootstrap-url]
+- [![Css][Css.com]][Css-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- GETTING STARTED -->
 
 [product-main]: images/screenshot.png
+
 ## Getting Started
 
 Follow the guide below to install and run the application.
@@ -87,21 +81,24 @@ Follow the guide below to install and run the application.
    $ code .
    ```
 4. Install dependencies
-    ```sh
-    # open a new terminal
-    $ npm install
-    ```
+   ```sh
+   # open a new terminal
+   $ npm install
+   ```
 5. Run the application
+
    ```sh
    $ npm start
-   ```    
-    The application is accessible at: http://localhost:3000/
+   ```
 
-   And the Figma UX/UI plan is here: 
-   
+   The application is accessible at: http://localhost:3000/
+
+   And the Figma UX/UI plan is here:
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTACT -->
+
 ## Contact
 
 Katalin Szigetvári - szigetvarikati@gmail.com
@@ -110,12 +107,10 @@ Project Link: https://github.com/szigetvarikati/GalleryApp
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/szigetvarikati/test-project-MERN.svg?style=for-the-badge
+
+[contributors-shield]: https://img.shields.io/github/contributors/szigetvarikati/GalleryApp.svg?style=for-the-badge
 [contributors-url]: https://github.com/szigetvarikati/test-project-MERN/graphs/contributors
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/katalin-szigetvári-9829519a
@@ -127,4 +122,5 @@ Project Link: https://github.com/szigetvarikati/GalleryApp
 [Javascript]: https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=typescript&logoColor=white
 [Javascript-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
 [Css.com]: https://img.shields.io/badge/CSS-563D7C?style=for-the-badge&logo=css&logoColor=white
+
 [Css-url]: http://](https://www.w3.org/Style/CSS/Overview.en.html)https://www.w3.org/Style/CSS/Overview.en.html/
