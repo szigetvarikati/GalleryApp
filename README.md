@@ -70,25 +70,20 @@ Follow the guide below to install and run the application.
 
 1. Clone the repository
    ```sh
-   $ git clone https://github.com/szigetvarikat/GalleryApp.git
+   git clone https://github.com/szigetvarikat/GalleryApp.git
    ```
 2. Navigate to the folder
    ```sh
-   $ cd GalleryApp
+   cd GalleryApp
    ```
-3. Open with an editor
-   ```sh
-   $ code .
-   ```
+3. Open the project
 4. Install dependencies
    ```sh
-   # open a new terminal
-   $ npm install
+   npm install
    ```
 5. Run the application
-
    ```sh
-   $ npm start
+   npm start
    ```
 
    The application is accessible at: http://localhost:3000/
