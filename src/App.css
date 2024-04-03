@@ -3,11 +3,6 @@
   margin-top: 5rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 5vh;
@@ -29,31 +24,6 @@
   font-size: 16px;
 }
 
-.card-body p {
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 10px;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-.table {
-  position: relative;
-}
-
-.Table-bordered {
-  border-collapse: collapse;
-  padding: 8px;
-}
-
-.Table-bordered td,
-.Table-bordered th {
-  border: 1px solid black;
-  padding: 8px;
-}
-
 .img-container {
   max-width: 300px;
   min-width: 150px;
@@ -61,11 +31,8 @@
   margin: auto;
 }
 
-.img-hover {
-  transition: transform 0.3s ease;
-}
-
 .img-hover:hover {
+  transition: transform 0.3s ease;
   transform: scale(1.25);
 }
 
@@ -90,19 +57,10 @@
   padding: 4px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.table tbody tr:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  background-color: #f2fafb;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
@@ -126,7 +84,7 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .table-responsive {
     overflow-x: auto;
   }
@@ -168,9 +126,22 @@
   .table thead {
     display: none;
   }
+
+  .bold-text {
+    display: inline;
+  }
+
+  .btn-outline-secondary {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-inline: 5px;
+    margin-block: 5px;
+  }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .bold-text {
     display: none;
   }
@@ -179,19 +150,5 @@
   }
   .sort-bar {
     display: none;
-  }
-}
-
-@media (max-width: 769px) {
-  .bold-text {
-    display: inline;
-  }
-  .btn-outline-secondary {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    margin-inline: 5px;
-    margin-block: 5px;
   }
 }
