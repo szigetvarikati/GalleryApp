@@ -4,7 +4,7 @@ import SearchBar from './SearchBar';
 
 function MyNavbar() {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="light" expand="lg" fixed="top">
       <Navbar.Brand href="#home">NAVA</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
