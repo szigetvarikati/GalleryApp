@@ -1,70 +1,121 @@
-# Getting Started with Create React App
+<a name="readme-top"></a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Contributors][contributors-shield]][contributors-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-## Available Scripts
+<h3 align="center">Gallery App</h3>
 
-In the project directory, you can run:
+  <p align="center">
+    This project is a custom homework assigment that I recieved through an application
+    <br />
+    <br />
+    <br />
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  </p>
+</div>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
 
-### `npm test`
+<!-- ABOUT THE PROJECT -->
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## About The Project
 
-### `npm run build`
+This project was a homework which test my frontend developer skills aswell my UX/UI skills.
+The main goal was to create an ergonomic, responsive website based on the mobile-first principle.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<p align="center">
+  <img src="https://i.imgur.com/TSMEKIJ.png" alt="PhotoTable on mobile" width=300px>
+  <img src="https://i.imgur.com/uQNYPsg.png" alt="Selected photo-metadata on mobile"width=300px>
+   <img src="https://i.imgur.com/s9TNiEF.png" alt="Editable photo-data on mobile"width=300px>
+</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Built With
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [![Javascript][Javascript]][Javascript-url]
+- [![React][React.js]][React-url]
+- [![Bootstrap][Bootstrap.com]][Bootstrap-url]
+- [![Css][Css.com]][Css-url]
 
-### `npm run eject`
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<!-- GETTING STARTED -->
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[product-main]: images/screenshot.png
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Getting Started
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Follow the guide below to install and run the application.
 
-## Learn More
+### Installation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Clone the repository
+   ```sh
+   git clone https://github.com/szigetvarikat/GalleryApp.git
+   ```
+2. Navigate to the folder
+   ```sh
+   cd GalleryApp
+   ```
+3. Open the project
+4. Install dependencies
+   ```sh
+   npm install
+   ```
+5. Run the application
+   ```sh
+   npm start
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   The application is accessible at: http://localhost:3000/
 
-### Code Splitting
+   And the Figma UX/UI plan is here:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Analyzing the Bundle Size
+<!-- CONTACT -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contact
 
-### Making a Progressive Web App
+Katalin Szigetvári - szigetvarikati@gmail.com
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Project Link: https://github.com/szigetvarikati/GalleryApp
 
-### Advanced Configuration
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-### Deployment
+[contributors-shield]: https://img.shields.io/github/contributors/szigetvarikati/GalleryApp.svg?style=for-the-badge
+[contributors-url]: https://github.com/szigetvarikati/GalleryApp/graphs/contributors
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/katalin-szigetvári-9829519a
+[product-main]: https://imgur.com/a/jEvI3mU
+[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[React-url]: https://reactjs.org/
+[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
+[Bootstrap-url]: https://getbootstrap.com
+[Javascript]: https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=typescript&logoColor=white
+[Javascript-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+[Css.com]: https://img.shields.io/badge/CSS-563D7C?style=for-the-badge&logo=css&logoColor=white
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[Css-url]: http://](https://www.w3.org/Style/CSS/Overview.en.html)https://www.w3.org/Style/CSS/Overview.en.html/
