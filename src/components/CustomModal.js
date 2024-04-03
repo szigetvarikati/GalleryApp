@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Modal, Form } from 'react-bootstrap';
-import { FaTimes } from 'react-icons/fa'; // Importáljuk a Times ikont a react-icons-ból
+import { FaTimes } from 'react-icons/fa';
 import MetaDataPanel from './MetaDataPanel';
 import MyButton from './MyButton';
 
@@ -20,8 +20,6 @@ function CustomModal({
   return (
     <Modal show={showModal} onHide={handleCloseModal} centered>
       <Modal.Header>
-        {/* Helyettesítsük a bezáró gombot egy "x" ikonnal */}
-
         <Modal.Title>Publikus adatok</Modal.Title>
         <FaTimes
           onClick={() => {
