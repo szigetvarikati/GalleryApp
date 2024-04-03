@@ -64,6 +64,18 @@
   transform: scale(1.25);
 }
 
+.custom-label {
+  margin-bottom: 2px;
+}
+
+.custom-input {
+  margin-bottom: 8px;
+}
+
+.bold-text {
+  font-weight:bold;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -78,7 +90,6 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
 
 @media (max-width: 768px) {
   .table-responsive {
@@ -113,6 +124,7 @@
 
   .table tbody td {
     display: block;
+    padding: 0.85rem;
   }
 
   .table thead {
@@ -123,7 +135,8 @@
     width: 80%;
     display: block;
     margin: auto;
-    margin-bottom: 10px;
+    margin-bottom: 5%;
+    margin-top: 5%;
     padding: 0;
     border: 0;
   }
