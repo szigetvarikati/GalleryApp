@@ -6,7 +6,7 @@ function PhotoTable() {
   const [photos, setPhotos] = useState([]);
   const [showModal, setShowModal] = useState(false);
   const [selectedPhoto, setSelectedPhoto] = useState(null);
-  const [sortDirections, setSortDirections] = useState({}); // Objektum az oszlopok rendezési irányának tárolásához
+  const [sortDirections, setSortDirections] = useState({});
 
   useEffect(() => {
     fetch('/foto.json')
@@ -29,13 +29,71 @@ function PhotoTable() {
 
   const handleSave = (updatedPhotoData) => {
     // Handle save logic here, you can pass updatedPhotoData to API or update state
-    console.log('Updated photo data:', updatedPhotoData);
+
+    // API endpoint for saving photo data
+    const saveEndpoint = '/api/photos';
+
+    // First, just log the API call parameters
+    console.log(
+      'Calling API to save photo data with parameters:',
+      updatedPhotoData
+    );
+
+    // Simulate a successful save by closing the modal
     handleCloseModal();
+
+    // Uncomment and use the below code if you have an actual API to call
+    /*
+    fetch(saveEndpoint, {
+      method: 'PUT', // Or other HTTP method like POST
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(updatedPhotoData),
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Failed to save photo data');
+        }
+        console.log('Photo data saved successfully');
+        // Handle successful save here if needed
+      })
+      .catch((error) => {
+        console.error('Error saving photo data:', error);
+        // Handle error here if needed
+      });
+    */
   };
 
   const handleDelete = () => {
     // Handle delete logic here
+
+    // API endpoint for deleting photo
+    const deleteEndpoint = '/api/photos/:id'; // Replace :id with the actual photo ID
+
+    // First, just log the API call
+    console.log('Calling API to delete photo');
+
+    // Simulate a successful delete by closing the modal
     handleCloseModal();
+
+    // Uncomment and use the below code if you have an actual API to call
+    /*
+    fetch(deleteEndpoint, {
+      method: 'DELETE',
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Failed to delete photo');
+        }
+        console.log('Photo deleted successfully');
+        // Handle successful delete here if needed
+      })
+      .catch((error) => {
+        console.error('Error deleting photo:', error);
+        // Handle error here if needed
+      });
+    */
   };
 
   const handleSort = (sortBy) => {
