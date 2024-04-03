@@ -31,7 +31,7 @@ function PhotoTable() {
     // Handle save logic here, you can pass updatedPhotoData to API or update state
 
     // API endpoint for saving photo data
-    const saveEndpoint = '/api/photos';
+    //const saveEndpoint = '/api/photos';
 
     // First, just log the API call parameters
     console.log(
@@ -69,7 +69,7 @@ function PhotoTable() {
     // Handle delete logic here
 
     // API endpoint for deleting photo
-    const deleteEndpoint = '/api/photos/:id'; // Replace :id with the actual photo ID
+    //const deleteEndpoint = '/api/photos/:id'; // Replace :id with the actual photo ID
 
     // First, just log the API call
     console.log('Calling API to delete photo');
