@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  margin-top: 5rem;
 }
 
 .App-logo {
@@ -80,6 +81,10 @@
   font-weight: bold;
 }
 
+.bold-meta-text {
+  font-weight: bold;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -114,11 +119,6 @@
     line-height: 1.2;
     margin-bottom: 5px;
   }
-
-  /* Kiemeljük az egyes cellák címkéit */
-  .Table-bordered td[data-label]:before {
-    font-weight: bold;
-  }
 }
 
 @media (max-width: 576px) {
@@ -129,7 +129,7 @@
   .table tbody tr {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 
   .table tbody td {
@@ -138,7 +138,7 @@
   }
 
   .table tbody td:before {
-    content: attr(data-label); /* Címke beállítása a mobil nézetben */
+    content: attr(data-label);
     font-weight: bold;
   }
 
@@ -160,18 +160,23 @@
     border: 0;
   }
 
-  /* Megjelenítjük a táblázat fejlécét csak a mobilnézetben */
   .table thead {
     display: none;
   }
 
-  /* Címkék csak azokhoz a cellákhoz */
-  .Table-bordered td span[data-label]:before {
-    content: attr(data-label);
-    font-weight: bold;
-    position: absolute;
-    left: 0;
-    top: 0;
-    padding-right: 10px;
+}
+
+@media (min-width: 768px) {
+  .bold-text {
+    display: none;
+  }
+  .bold-meta-text {
+    display: inline;
+  }
+}
+
+@media (max-width: 769px) {
+  .bold-text {
+    display: inline;
   }
 }
