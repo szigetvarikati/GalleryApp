@@ -43,9 +43,15 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+
 This project was a homework which test my frontend developer skills aswell my UX/UI skills.
 The main goal was to create an ergonomic, responsive website based on the mobile-first principle.
 
+<p align="center">
+  <img src="https://i.imgur.com/TSMEKIJ.png" alt="PhotoTable on mobile" width=300px>
+  <img src="https://i.imgur.com/uQNYPsg.png" alt="Selected photo-metadata on mobile"width=300px>
+   <img src="https://i.imgur.com/s9TNiEF.png" alt="Editable photo-data on mobile"width=300px>
+</p>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
