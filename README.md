@@ -88,7 +88,7 @@ Follow the guide below to install and run the application.
 
    The application is accessible at: http://localhost:3000/
 
-   And the Figma UX/UI plan is here:
+      <a href="https://www.figma.com/file/nBtilh5q6bqcl263XwJU9d/NAVA?type=design&mode=design&t=c1hlhIKx61oTi3ah-7)"><strong>And a Figma WiireFrame-prototype is here.</strong></a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
