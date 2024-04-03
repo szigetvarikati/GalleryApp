@@ -38,10 +38,9 @@ function PhotoTable() {
 
   return (
     <div className="container">
-      <h2>Photo Table</h2>
       <div className="table-responsive">
         <table className="table table-bordered">
-          <thead className="thead-dark">
+          <thead className="thead-light">
             <tr>
               <th scope="col">IMG</th>
               <th scope="col">IDs</th>
@@ -61,20 +60,35 @@ function PhotoTable() {
                       className="card-img-top img-fluid img-hover img-thumbnail"
                       src="logo192.png"
                       alt={photo.description_str}
-                      width="100"
                     />
                   </div>
                 </td>
-                <td>{photo.id}</td>
-                <td>{photo.description_str}</td>
                 <td>
-                  {photo.ow_i} x {photo.oh_i}
+                  <span className="bold-text">ID:</span> {photo.id}
                 </td>
-                <td>{photo.createDate_dt.slice(0, 10)}</td>
-                <td>modify date</td>
                 <td>
-                  {photo.format_str}
-                  <p>({photo.bitdepth_i} bit)</p>
+                  <span className="bold-text">RIPORT/SLUG:</span>{' '}
+                  {photo.description_str}
+                </td>
+                <td>
+                  <span className="bold-text">SIZE:</span>{' '}
+                  <span>
+                    {photo.ow_i} x {photo.oh_i}
+                  </span>
+                </td>
+                <td>
+                  <span className="bold-text">CREATE DATE:</span>{' '}
+                  <span>{photo.createDate_dt.slice(0, 10)}</span>
+                </td>
+                <td>
+                  <span className="bold-text">MODIFY DATE:</span>{' '}
+                  <span>modify date</span>
+                </td>
+                <td>
+                  <span className="bold-text">FORMAT:</span>{' '}
+                  <span>
+                    {photo.format_str} <br />  ({photo.bitdepth_i} bit)
+                  </span>
                 </td>
               </tr>
             ))}
