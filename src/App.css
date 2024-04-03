@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  margin-top: 5rem;
 }
 
 .App-logo {
@@ -18,30 +19,28 @@
   color: white;
 }
 
-/* .App-footer {
-  background-color: #282c34;
-  min-height: 5vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  font-size: calc(8px + 2vmin);
-  color: white;
-} */
-
 .App-footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  min-height: 2%;
   background-color: #f8f9fa;
   text-align: center;
   padding: 10px;
-  font-size: smaller;
+  font-size: 16px;
+}
+
+.card-body p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.table {
+  position: relative;
 }
 
 .Table-bordered {
@@ -56,18 +55,34 @@
 }
 
 .img-container {
-  max-width: 300px; /* Maximális méret */
-  min-width: 150px; /* Minimális méret */
-  width: 100%; /* Automatikusan kitölti a rendelkezésre álló teret */
-  margin: auto; /* Középre igazítás */
+  max-width: 300px;
+  min-width: 150px;
+  width: 100%;
+  margin: auto;
 }
 
 .img-hover {
-  transition: transform 0.3s ease; /* Sima átmenet animáció */
+  transition: transform 0.3s ease;
 }
 
 .img-hover:hover {
-  transform: scale(1.25); /* 25% nagyobb méret a hover hatására */
+  transform: scale(1.25);
+}
+
+.custom-label {
+  margin-bottom: 2px;
+}
+
+.custom-input {
+  margin-bottom: 8px;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.bold-meta-text {
+  font-weight: bold;
 }
 
 @keyframes App-logo-spin {
@@ -85,50 +100,83 @@
   }
 }
 
-/* tablets*/
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .table-responsive {
     overflow-x: auto;
   }
+
+  .App-footer {
+    height: 30px;
+    font-size: medium;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  .card-body p {
+    font-size: 14px;
+    line-height: 1.2;
+    margin-bottom: 5px;
+  }
 }
 
-/* mobils*/
 @media (max-width: 576px) {
   .table-responsive {
     overflow-x: auto;
   }
 
   .table tbody tr {
-    display: block;
-    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
   }
 
   .table tbody td {
     display: block;
+    padding: 0.3rem;
+  }
+
+  .table tbody td:before {
+    content: attr(data-label);
+    font-weight: bold;
+  }
+
+  .table tbody td p {
+    margin: 0;
+  }
+
+  .table thead {
+    display: contents;
+  }
+
+  .img-container img {
+    width: 80%;
+    display: block;
+    margin: auto;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    padding: 0;
+    border: 0;
   }
 
   .table thead {
     display: none;
   }
+
 }
 
-/* styles.css vagy valamilyen más stílusfájlban */
-@media screen and (max-width: 768px) {
-  .App-footer {
-    height: 30px; /* Kisebb magasság mobil nézetben */
-    font-size: medium;
+@media (min-width: 768px) {
+  .bold-text {
+    display: none;
+  }
+  .bold-meta-text {
+    display: inline;
   }
 }
 
-@media screen and (min-width: 769px) {
-  .App-footer {
-    height: 50px; /* Nagyobb magasság asztali nézetben */
-    font-size: large;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  body {
-    font-size: 14px;
+@media (max-width: 769px) {
+  .bold-text {
+    display: inline;
   }
 }
