@@ -7,11 +7,9 @@ function PhotoTable() {
   const [selectedPhoto, setSelectedPhoto] = useState(null);
 
   useEffect(() => {
-    // Fetch data from foto.json
     fetch('/foto.json')
       .then((response) => response.json())
       .then((data) => {
-        // Extract the docs array from the response
         const docs = data.response.docs;
         setPhotos(docs);
       })
@@ -88,7 +86,7 @@ function PhotoTable() {
         handleCloseModal={handleCloseModal}
         handleSave={handleSave}
         handleDelete={handleDelete}
-        photoData={selectedPhoto} // Pass selectedPhoto as photoData prop
+        photoData={selectedPhoto}
       />
     </div>
   );
